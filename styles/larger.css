@@ -1,0 +1,48 @@
+/* Larger view styles – must contain a media query */
+@media screen and (min-width: 600px) {
+  .menu-button {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block;
+  }
+
+  .primary-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .primary-nav a {
+    border-bottom: none;
+    padding: 0.9rem 1.5rem;
+  }
+
+  main {
+    padding: 1.5rem 2rem;
+  }
+
+  /* Example multi-column layout for larger screens (required – not just one column) */
+  .about-photo-wrapper { /* optional helper if you want side-by-side */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 1.05rem;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+}
