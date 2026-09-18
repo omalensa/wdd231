@@ -1,9 +1,9 @@
 /* ========== CSS Variables ========== */
 :root {
-  --primary: #e67e22;
-  --primary-dark: #d35400;
+  --primary: #c45d11;        /* Darker orange - better contrast */
+  --primary-dark: #a04a0e;
   --secondary: #2c3e50;
-  --accent: #f39c12;
+  --accent: #e67e22;
   --light: #fdf6f0;
   --white: #ffffff;
   --text: #333333;
@@ -265,4 +265,9 @@ footer {
 
 .dev-info p {
   margin-bottom: 0.3rem;
+}
+
+body {
+  font-family: 'Roboto', system-ui, sans-serif;
+  /* ... rest of your styles */
 }
