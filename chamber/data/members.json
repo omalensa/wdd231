@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Arewa Textiles",
+    "address": "15 Ahmadu Bello Way, Kaduna, Nigeria",
+    "phone": "+234 803 123 4567",
+    "website": "https://example.com",
+    "image": "arewa-textiles.webp",
+    "membership": 3,
+    "description": "Leading textile manufacturing company in Northern Nigeria."
+  },
+  {
+    "name": "Kaduna Furniture Hub",
+    "address": "Plot 12, Independence Way, Kaduna",
+    "phone": "+234 802 987 6543",
+    "website": "https://example.com",
+    "image": "kaduna-furniture.webp",
+    "membership": 2,
+    "description": "Quality furniture and interior design solutions."
+  },
+  {
+    "name": "Zaria Road Motors",
+    "address": "Km 5 Zaria Road, Kaduna",
+    "phone": "+234 809 111 2233",
+    "website": "https://example.com",
+    "image": "zaria-motors.webp",
+    "membership": 1,
+    "description": "Automobile sales, service and spare parts."
+  },
+  {
+    "name": "Naija Fresh Foods",
+    "address": "22 Station Road, Kaduna",
+    "phone": "+234 701 444 5566",
+    "website": "https://example.com",
+    "image": "naija-fresh.webp",
+    "membership": 3,
+    "description": "Fresh farm produce and packaged foods."
+  },
+  {
+    "name": "Sahel Tech Solutions",
+    "address": "Suite 5, Ibrahim Taiwo Road, Kaduna",
+    "phone": "+234 803 777 8899",
+    "website": "https://example.com",
+    "image": "sahel-tech.webp",
+    "membership": 2,
+    "description": "IT services, software development and networking."
+  },
+  {
+    "name": "Kaduna Crafts Market",
+    "address": "Central Market, Kaduna",
+    "phone": "+234 802 333 4455",
+    "website": "https://example.com",
+    "image": "kaduna-crafts.webp",
+    "membership": 1,
+    "description": "Traditional crafts, leather works and souvenirs."
+  },
+  {
+    "name": "Green Savannah Agro",
+    "address": "Ungwan Rimi, Kaduna",
+    "phone": "+234 809 666 7788",
+    "website": "https://example.com",
+    "image": "green-savannah.webp",
+    "membership": 3,
+    "description": "Agricultural inputs and consulting services."
+  }
+]
