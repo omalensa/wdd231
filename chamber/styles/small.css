@@ -1,9 +1,9 @@
 /* ========== CSS Variables ========== */
 :root {
-  --primary: #b34a0a;        /* Darker orange - passes contrast */
+  --primary: #b34a0a;
   --primary-dark: #8f3a08;
   --secondary: #2c3e50;
-  --accent: #e67e22;         /* Keep the brighter orange for accents only */
+  --accent: #e67e22;
   --light: #fdf6f0;
   --white: #ffffff;
   --text: #333333;
@@ -18,8 +18,8 @@
 }
 
 body {
-  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
   color: var(--text);
   background-color: var(--light);
 }
@@ -101,10 +101,9 @@ header {
 }
 
 #primary-nav a:hover,
-#primary-nav a.active,
-.view-controls button.active {
+#primary-nav a.active {
   background-color: var(--primary);
-  color: var(--white);
+  text-decoration: none;
 }
 
 /* ========== Main ========== */
@@ -116,12 +115,12 @@ main {
 
 h1 {
   color: var(--secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   font-size: 1.8rem;
 }
 
 .intro {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
   color: var(--gray);
 }
 
@@ -129,7 +128,7 @@ h1 {
 .view-controls {
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
   flex-wrap: wrap;
 }
 
@@ -137,6 +136,11 @@ h1 {
   background-color: var(--white);
   border: 2px solid var(--primary);
   color: var(--primary);
+  padding: 0.5rem 1.1rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .view-controls button:hover {
@@ -150,7 +154,7 @@ h1 {
   color: var(--white);
 }
 
-/* ========== Members Grid / List ========== */
+/* ========== Members - Grid View ========== */
 .members {
   display: grid;
   gap: 1.2rem;
@@ -187,7 +191,7 @@ h1 {
   color: var(--primary-dark);
   font-weight: 700;
   font-size: 0.9rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .member-card p {
@@ -198,34 +202,34 @@ h1 {
 
 .member-card a {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   font-size: 0.9rem;
   word-break: break-all;
 }
 
-/* List View */
+/* ========== Members - List View ========== */
 .members.list {
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .members.list .member-card {
-  display: grid;
-  grid-template-columns: 80px 1fr;
   text-align: left;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.members.list .member-card img {
-  width: 70px;
-  height: 70px;
-  margin: 0;
+  padding: 0.75rem 1rem;
+  border-top: 4px solid var(--primary);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .members.list .member-card h3 {
-  grid-column: 2;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
+  font-size: 1.1rem;
+}
+
+.members.list .member-card .level,
+.members.list .member-card p {
+  margin-bottom: 0.15rem;
+  font-size: 0.9rem;
 }
 
 /* ========== Footer ========== */
@@ -242,11 +246,12 @@ footer {
 }
 
 .contact h3 {
-  color: var(--accent);   /* This one is fine as accent */
+  color: var(--accent);
+  margin-bottom: 0.6rem;
 }
 
 .contact p {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
   font-size: 0.95rem;
 }
 
@@ -259,6 +264,89 @@ footer {
 }
 
 .dev-info p {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
+/* ===== Home Page Specific Styles ===== */
+.hero {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.events, .weather, .spotlights {
+  margin-bottom: 2.5rem;
+}
+
+.event-cards, .spotlight-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.event-cards article,
+.spotlight-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-top: 4px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.spotlight-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.forecast-days {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}

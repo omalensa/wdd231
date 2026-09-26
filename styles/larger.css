@@ -1,48 +1,60 @@
-/* Larger view styles – must contain a media query */
+/* ========== Larger Screens ========== */
 @media screen and (min-width: 600px) {
-  .menu-button {
+  #menu-button {
     display: none;
   }
 
-  .primary-nav {
+  #primary-nav {
     display: block;
   }
 
-  .primary-nav ul {
+  #primary-nav ul {
     display: flex;
     justify-content: center;
-    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  .primary-nav a {
+  #primary-nav a {
     border-bottom: none;
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
-  main {
-    padding: 1.5rem 2rem;
+  .members.grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Example multi-column layout for larger screens (required – not just one column) */
-  .about-photo-wrapper { /* optional helper if you want side-by-side */
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .course-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.75rem;
+  .logo-container span {
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 900px) {
-  body {
-    font-size: 1.05rem;
-  }
-
   header {
     padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .members.grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

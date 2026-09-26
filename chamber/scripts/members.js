@@ -5,22 +5,12 @@ const listBtn = document.getElementById("list-btn");
 async function getMembers() {
   try {
     const response = await fetch("data/members.json");
-    
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
+    if (!response.ok) throw new Error("Failed to load members");
     const data = await response.json();
-    console.log("Members loaded successfully:", data); // ← helpful for debugging
     displayMembers(data);
-
   } catch (error) {
-    console.error("Error loading members:", error);
-    membersContainer.innerHTML = `
-      <p style="color: red; padding: 1rem;">
-        Sorry, the member data could not be loaded.<br>
-        Please check the console for more details.
-      </p>`;
+    console.error(error);
+    membersContainer.innerHTML = `<p style="color:red">Error loading members</p>`;
   }
 }
 
@@ -35,7 +25,7 @@ function displayMembers(members) {
     card.classList.add("member-card");
 
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="100" height="100">
+      <img class="member-img" src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="100" height="100">
       <h3>${member.name}</h3>
       <p class="level">${level} Member</p>
       <p>${member.address}</p>
@@ -47,19 +37,33 @@ function displayMembers(members) {
   });
 }
 
-// View toggle
-gridBtn.addEventListener("click", () => {
-  membersContainer.classList.add("grid");
+// ===== VIEW TOGGLE =====
+function setGridView() {
   membersContainer.classList.remove("list");
+  membersContainer.classList.add("grid");
   gridBtn.classList.add("active");
   listBtn.classList.remove("active");
-});
 
-listBtn.addEventListener("click", () => {
-  membersContainer.classList.add("list");
+  // Show all images
+  document.querySelectorAll(".member-img").forEach(img => {
+    img.style.display = "block";
+  });
+}
+
+function setListView() {
   membersContainer.classList.remove("grid");
+  membersContainer.classList.add("list");
   listBtn.classList.add("active");
   gridBtn.classList.remove("active");
-});
 
+  // Hide all images
+  document.querySelectorAll(".member-img").forEach(img => {
+    img.style.display = "none";
+  });
+}
+
+gridBtn.addEventListener("click", setGridView);
+listBtn.addEventListener("click", setListView);
+
+// Load members
 getMembers();
