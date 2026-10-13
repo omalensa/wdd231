@@ -246,8 +246,7 @@ footer {
 }
 
 .contact h3 {
-  color: var(--accent);
-  margin-bottom: 0.6rem;
+  color: #ffb347;
 }
 
 .contact p {
