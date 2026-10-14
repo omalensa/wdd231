@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Share Your Live Location",
+    "category": "personal",
+    "level": "Essential",
+    "description": "Always share your live location with at least one trusted contact when traveling alone or at night."
+  },
+  {
+    "id": 2,
+    "title": "Avoid Posting Real-Time Locations",
+    "category": "personal",
+    "level": "Essential",
+    "description": "Do not post your current location on social media. Wait until you have left the place before sharing."
+  },
+  {
+    "id": 3,
+    "title": "Use Safe Routes",
+    "category": "travel",
+    "level": "Important",
+    "description": "Choose well-lit and busy routes. Avoid isolated roads and shortcuts, especially after dark."
+  },
+  {
+    "id": 4,
+    "title": "Teach Children Code Words",
+    "category": "family",
+    "level": "Essential",
+    "description": "Create a secret family code word that only trusted adults know. Teach children never to go with anyone who doesn't know it."
+  },
+  {
+    "id": 5,
+    "title": "Keep Emergency Numbers Ready",
+    "category": "personal",
+    "level": "Essential",
+    "description": "Save police, emergency, and trusted contact numbers on speed dial and on a piece of paper in your wallet."
+  },
+  {
+    "id": 6,
+    "title": "Travel in Groups",
+    "category": "travel",
+    "level": "Important",
+    "description": "Whenever possible, travel with other people. There is safety in numbers."
+  },
+  {
+    "id": 7,
+    "title": "Be Aware of Your Surroundings",
+    "category": "personal",
+    "level": "Essential",
+    "description": "Avoid using headphones at high volume or being deeply focused on your phone when walking alone."
+  },
+  {
+    "id": 8,
+    "title": "Verify Identities",
+    "category": "family",
+    "level": "Important",
+    "description": "Always verify the identity of anyone claiming to be from school, delivery, or government before opening the door."
+  },
+  {
+    "id": 9,
+    "title": "Use Trusted Transport",
+    "category": "travel",
+    "level": "Essential",
+    "description": "Prefer registered ride-hailing services or known drivers. Share the trip details with a friend."
+  },
+  {
+    "id": 10,
+    "title": "Community Watch Groups",
+    "category": "community",
+    "level": "Helpful",
+    "description": "Join or form local community safety groups to share information and support each other."
+  },
+  {
+    "id": 11,
+    "title": "Secure Your Home",
+    "category": "family",
+    "level": "Important",
+    "description": "Install good locks, outdoor lighting, and consider a simple alarm or camera system."
+  },
+  {
+    "id": 12,
+    "title": "Plan Your Journey",
+    "category": "travel",
+    "level": "Important",
+    "description": "Tell someone your destination, expected arrival time, and the route you plan to take."
+  },
+  {
+    "id": 13,
+    "title": "Trust Your Instincts",
+    "category": "personal",
+    "level": "Essential",
+    "description": "If a situation or person feels wrong, leave immediately. Your intuition is a powerful safety tool."
+  },
+  {
+    "id": 14,
+    "title": "Educate Your Family",
+    "category": "family",
+    "level": "Essential",
+    "description": "Regularly discuss safety rules with children and household members so everyone knows what to do."
+  },
+  {
+    "id": 15,
+    "title": "Report Suspicious Activity",
+    "category": "community",
+    "level": "Helpful",
+    "description": "Report unusual behavior or abandoned vehicles to local security or community leaders quickly."
+  },
+  {
+    "id": 16,
+    "title": "Keep Doors Locked",
+    "category": "family",
+    "level": "Essential",
+    "description": "Always lock car doors while driving and home doors even when you are inside."
+  },
+  {
+    "id": 17,
+    "title": "Avoid Isolated ATMs",
+    "category": "personal",
+    "level": "Important",
+    "description": "Use ATMs in busy, well-lit areas during the day whenever possible."
+  },
+  {
+    "id": 18,
+    "title": "Emergency Meeting Point",
+    "category": "family",
+    "level": "Helpful",
+    "description": "Agree on a safe meeting place for the family in case of an emergency or separation."
+  }
+]

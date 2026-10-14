@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources | SafeGuard NG</title>
+  <meta name="description" content="Access emergency contacts, safety guidelines, and request more information from SafeGuard NG.">
+  <meta name="author" content="Samson Omale">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Safety Resources | SafeGuard NG">
+  <meta property="og:description" content="Emergency contacts and practical safety resources for individuals and families in Nigeria.">
+  <meta property="og:image" content="https://omalensa.github.io/wdd231/final/images/og-image.jpg">
+  <meta property="og:url" content="https://omalensa.github.io/wdd231/final/resources.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.webp" alt="SafeGuard NG logo" width="50" height="50">
+      <span>SafeGuard NG</span>
+    </div>
+    <button id="menu-button" aria-label="Open navigation menu">☰</button>
+  </header>
+
+  <nav id="primary-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="resources.html" class="active" aria-current="page">Resources</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Safety Resources</h1>
+    <p class="intro">Important contacts and practical information to help you stay safer.</p>
+
+    <!-- Emergency Contacts -->
+    <section class="resources-section">
+      <h2>Emergency Contacts (Nigeria)</h2>
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <h3>Police Emergency</h3>
+          <p>112 or 199</p>
+        </div>
+        <div class="contact-card">
+          <h3>National Emergency</h3>
+          <p>112</p>
+        </div>
+        <div class="contact-card">
+          <h3>Kaduna State Security</h3>
+          <p>+234 803 000 0000</p>
+        </div>
+        <div class="contact-card">
+          <h3>Child Protection Helpline</h3>
+          <p>0808 000 0000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety Guidelines -->
+    <section class="resources-section">
+      <h2>Quick Safety Guidelines</h2>
+      <ul class="guidelines">
+        <li>Always let someone know where you are going and when you expect to return.</li>
+        <li>Keep your phone charged and with enough airtime/data.</li>
+        <li>Avoid sharing personal routines publicly on social media.</li>
+        <li>Trust your instincts — if something feels wrong, leave the area immediately.</li>
+        <li>Teach children never to open the door or follow strangers.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="resources-section">
+      <h2>Request More Information</h2>
+      <p>Fill out the form below and we will get back to you with additional safety resources.</p>
+
+      <form method="get" action="thankyou.html" class="contact-form">
+        <label>
+          Full Name*
+          <input type="text" name="fullname" id="fullname" required autocomplete="name" title="Please enter your full name">
+        </label>
+
+        <label>
+          Email Address*
+          <input type="email" name="email" id="email" required autocomplete="email" 
+                 placeholder="example@email.com" title="Please enter a valid email">
+        </label>
+
+        <label>
+          Phone Number
+          <input type="tel" name="phone" id="phone" autocomplete="tel" title="Your phone number">
+        </label>
+
+        <label>
+          How can we help you?*
+          <select name="interest" id="interest" required title="Select a topic">
+            <option value="">-- Please select --</option>
+            <option value="safety-tips">Safety Tips</option>
+            <option value="family-protection">Family Protection</option>
+            <option value="community">Community Programs</option>
+            <option value="app-info">App Information</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" title="Additional details"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <button type="submit" class="cta-button">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="currentyear"></span> SafeGuard NG | Samson Omale | WDD 231</p>
+      <p id="lastModified"></p>
+      <p>
+        <a href="https://your-video-link.com" target="_blank" rel="noopener">Project Video</a> • 
+        <a href="attributions.html">Attributions</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Set timestamp when page loads
+    document.getElementById('timestamp').value = new Date().toLocaleString();
+  </script>
+</body>
+</html>
